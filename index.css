@@ -1,0 +1,70 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-weight: 300;
+    font-family: "Outfit", sans-serif;
+}
+
+img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+hr {
+    color: hsl(215, 51%, 70%);
+    margin: 20px 0;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 340px;
+    color: hsl(215, 51%, 70%);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-heading {
+    font-weight: 600;
+    font-size: 22px;
+    color:  hsl(0, 0%, 100%)
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+span {
+    font-size: 16px;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-info {
+    display: flex;
+    align-items: center;
+}
+
+.credit-img {
+    /*width: 45px;*/
+    width: 33px;
+    border-radius: 100%;
+    border:1px solid hsl(0, 0%, 100%);
+    margin-right: 15px;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+}
+
+.created-by {
+    font-weight: bold;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
