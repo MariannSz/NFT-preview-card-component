@@ -1,4 +1,8 @@
 body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     background-color: hsl(217, 54%, 11%);
     font-weight: 300;
     font-family: "Outfit", sans-serif;
@@ -22,14 +26,38 @@ hr {
     border-radius: 5px;
 }
 
+.img-overlay {
+    position: absolute;
+    background-color: rgba(0, 255, 247, 0.5);
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
 .card-content {
     padding: 20px;
 }
 
-.card-heading {
+.card-heading span {
     font-weight: 600;
     font-size: 22px;
     color:  hsl(0, 0%, 100%)
+}
+
+.card-heading:hover span{
+    color: rgba(0, 255, 247);
+    cursor: pointer;
 }
 
 .card-text {
@@ -51,7 +79,6 @@ span {
 }
 
 .credit-img {
-    /*width: 45px;*/
     width: 33px;
     border-radius: 100%;
     border:1px solid hsl(0, 0%, 100%);
@@ -64,6 +91,11 @@ span {
 
 .created-by {
     font-weight: bold;
+}
+
+.created-by:hover {
+    color: rgba(0, 255, 247);
+    cursor: pointer;
 }
 
 .attribution { font-size: 11px; text-align: center; }
